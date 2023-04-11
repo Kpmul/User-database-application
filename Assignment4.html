@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+       
+        .head{
+            text-align: left;                                                                   
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: larger;
+            
+        }
+        h1 {
+            font: 30px Verdana;
+            text-align: center;
+        }
+        h2 {
+            font: 20px Verdana;
+            text-align: center;
+        }
+        legend {
+            padding: 10px;
+            font: 30px Verdana
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <div class="container"> 
+            <div class="row justify-content-center">
+                <form id="addUserForm" class="form-horizontal" >
+                    <fieldset>
+                        <legend>Add User to Database</legend>
+
+                        <div class="head"><u>Information</u></div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="title">Title</label>
+                            <div class="col-md-4">
+                                <input id="title" name="title" placeholder="title"
+                                    class="form-control input-md">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="first_name">*First Name(s)</label>
+                            <div class="col-md-4">
+                                <input id="first_name" name="first_name" placeholder="First Name(s)"
+                                    class="form-control input-md">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="surname">*Surname</label>
+                            <div class="col-md-4">
+                                <input id="surname" name="surname" type="text" placeholder="Surname"
+                                    class="form-control input-md">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="mobile">*Mobile</label>
+                            <div class="col-md-4">
+                                <input id="mobile" name="mobile" type="text" placeholder="Mobile"
+                                    class="form-control input-md">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="email">*Email Address</label>
+                            <div class="col-md-4">
+                                <input id="email" name="email" type="text" placeholder="Email Address"
+                                    class="form-control input-md">
+                            </div>
+                        </div>
+
+                        <div class="head"><u>Home Address</u></div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="home_address1">*Address Line 1</label>
+                            <div class="col-md-4">
+                                <input id="home_address1" name="home_address1" type="text" placeholder="Address Line 1"
+                                    class="form-control input-md">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="home_address2">Address Line 2</label>
+                            <div class="col-md-4">
+                                <input id="home_address2" name="home_address2" type="text" placeholder="Address Line 2"
+                                    class="form-control input-md">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="home_town">*Town</label>
+                            <div class="col-md-4">
+                                <input id="home_town" name="home_town" type="text" placeholder="Town"
+                                    class="form-control input-md">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="home_county">*County/City</label>
+                            <div class="col-md-4">
+                                <input id="home_county" name="home_county" type="text" placeholder="County/City"
+                                    class="form-control input-md">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="home_eircode">Eircode</label>
+                            <div class="col-md-4">
+                                <input id="home_eircode" name="home_eircode" type="text" placeholder="Eircode"
+                                    class="form-control input-md">
+                            </div>
+                        </div>
+                        
+                        <div class="head"><u>Shipping Address</u></div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="ship_address1">*Address Line 1</label>
+                            <div class="col-md-4">
+                                <input id="ship_address1" name="ship_address1" type="text" placeholder="Address Line 1"
+                                    class="form-control input-md">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="ship_address2">Address Line 2</label>
+                            <div class="col-md-4">
+                                <input id="ship_address2" name="ship_address2" type="text" placeholder="Address Line 2"
+                                    class="form-control input-md">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="ship_town">*Town</label>
+                            <div class="col-md-4">
+                                <input id="ship_town" name="ship_town" type="text" placeholder="Town"
+                                    class="form-control input-md">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="ship_county">*County/City</label>
+                            <div class="col-md-4">
+                                <input id="ship_county" name="ship_county" type="text" placeholder="County/City"
+                                    class="form-control input-md">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="ship_eircode">Eircode</label>
+                            <div class="col-md-4">
+                                <input id="ship_eircode" name="ship_eircode" type="text" placeholder="Eircode"
+                                    class="form-control input-md">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="submit"></label>
+                            <div class="col-md-4">
+                                <input type="submit" value="Send User Data" class="btn btn-primary">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <br />
+
+    <div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <form id="getUserForm" class="form-horizontal">
+                    <fieldset>
+
+                        <legend>Show User Information</legend>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="get_first_name">*First Name(s)</label>
+                            <div class="col-md-4">
+                                <input id="get_first_name" name="get_first_name" placeholder="First Name(s)"
+                                    class="form-control input-md">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="get_surname">*Surname</label>
+                            <div class="col-md-4">
+                                <input id="get_surname" name="get_surname" type="text" placeholder="Surname"
+                                    class="form-control input-md">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="showUserDatabase">User Info</label>
+                            <div class="col-md-4">
+                                <textarea class="form-control" id="showUserDatabase"
+                                    name="showUserDatabase">See user info here!</textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="submit"></label>
+                            <div class="col-md-4">
+                                <input type="submit" value="Get User Database" class="btn btn-primary">
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="modalUserAdded" class="w3-modal w3-animate-opacity">
+        <div class="w3-modal-content w3-card-4">
+            <header class="w3-container w3-blue-grey">
+                <span onclick="document.getElementById('modalUserAdded').style.display='none'"
+                    class="w3-button w3-large w3-display-topright">&times;</span>
+                <h2>User Added to Database!</h2>
+            </header>
+            <div class="w3-container">
+                <p></p>
+                <p id="modalUserAddedMessage">Message Text</p>
+                
+            </div>
+            <footer class="w3-container w3-blue-grey">
+                <p></p>
+            </footer>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {  // Start of AJAX    
+
+            $("#addUserForm").submit(function(e) {  // AJAX method that takes inserted data from forms
+              e.preventDefault();
+              const formData = {
+                title: $('#title').val(),
+                first_name: $('#first_name').val(),
+                surname: $('#surname').val(),
+                mobile: $('#mobile').val(),
+                email: $('#email').val(),
+                home_address1: $('#home_address1').val(),
+                home_address2: $('#home_address2').val(),
+                home_town: $('#home_town').val(),
+                home_county: $('#home_county').val(),
+                home_eircode: $('#home_eircode').val(),
+                ship_address1: $('#ship_address1').val(),
+                ship_address2: $('#ship_address2').val(),
+                ship_town: $('#ship_town').val(),
+                ship_county: $('#ship_county').val(),
+                ship_eircode: $('#ship_eircode').val()
+              };
+              
+              $.ajax({                                      // Send a 'POST' request to the server
+                type: "POST",
+                url: "http://localhost:8000/adduser",
+                data: JSON.stringify(formData),
+                contentType: "application/json",
+                success: function(response) {
+                  console.log(response);                    // If successful clear all input fields
+                    $('#title').val('');
+                    $('#first_name').val('');
+                    $('#surname').val('');
+                    $('#mobile').val('');
+                    $('#email').val('');
+                    $('#home_address1').val('');
+                    $('#home_address2').val('');
+                    $('#home_town').val('');
+                    $('#home_county').val('');
+                    $('#home_eircode').val('');
+                    $('#ship_address1').val('');
+                    $('#ship_address2').val('');
+                    $('#ship_town').val('');
+                    $('#ship_county').val('');
+                    $('#ship_eircode').val('');
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                  console.log(textStatus, errorThrown);             // Catch error if it does not succeed
+                }
+              });
+            });
+          });
+
+        $("#getUserForm").submit(function(e) {                      // Method for taking first_name and surname of user in the database 
+        e.preventDefault();
+        formData = {
+        first_name: $('#get_first_name').val(),                     
+        surname: $('#get_surname').val()
+        };
+
+        $.ajax({                                                    // Sends 'GET' request to server
+        type: "GET",
+        url: "http://localhost:8000/getuser",
+        data: formData, 
+        contentType: "application/json",
+        success: function(response) {
+            console.log(response);
+            $('#userInfo').text(response);
+            $('#get_first_name').val('');
+            $('#get_surname').val('');
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            console.log(textStatus, errorThrown);
+        }
+    });
+}); 
+    </script>
+</body>
+
+</html>
